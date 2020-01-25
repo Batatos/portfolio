@@ -1,13 +1,14 @@
 import React from 'react';
-import DrawerBar from './DrawerBar';
+import Navbar from './Navbar';
 import ParticlesBg from 'particles-bg';
+// import { Navbar } from 'react-bootstrap';
 
 export default class Root extends React.Component{
     render(){
         return(
             <div className="container">
                 <div className="row">
-                    <DrawerBar/>
+                    <Navbar/>
                     <ParticlesBg type="cobweb" bg={true} />
                 </div>
                 <div className="row">
