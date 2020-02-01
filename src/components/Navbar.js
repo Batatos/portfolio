@@ -6,7 +6,8 @@ import {Link, animateScroll as scroll} from 'react-scroll';
 class NavBar extends Component{
     render(){
         return(
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top" style={{paddingLeft: "10%", paddingRight: "10%"}}>
+            {/* <div style={{paddingLeft: "10%", paddingRight: "10%"}}> */}
             <Link
             activeClass="active"
             to="section1-content"
@@ -75,7 +76,9 @@ class NavBar extends Component{
                 </Link>
               </Nav>
             </Navbar.Collapse>
+            {/* </div> */}
           </Navbar>
+          
         )
     }
 }
