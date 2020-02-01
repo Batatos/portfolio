@@ -15,7 +15,7 @@ class NavBar extends Component{
             offset={-50}
             duration= {500}
             >
-            <Navbar.Brand href="#home">Home</Navbar.Brand>
+            <Navbar.Brand href="#home">HOME</Navbar.Brand>
             </Link>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -31,7 +31,7 @@ class NavBar extends Component{
                 offset={-50}
                 duration= {500}
                 >
-                <Nav.Link href="#features">About</Nav.Link>
+                <Nav.Link href="#features">ABOUT</Nav.Link>
               </Link>
               <Link
                 activeClass="active"
@@ -41,7 +41,7 @@ class NavBar extends Component{
                 offset={-50}
                 duration= {500}
                 >
-                <Nav.Link href="#features">Side Projects</Nav.Link>
+                <Nav.Link href="#features">EXPERIENCE</Nav.Link>
                 </Link>
                 <Link
                 activeClass="active"
@@ -51,7 +51,27 @@ class NavBar extends Component{
                 offset={-50}
                 duration= {500}
                 >
-                <Nav.Link href="#pricing">Blog</Nav.Link>
+                <Nav.Link href="#pricing">EDUCATION</Nav.Link>
+                </Link>
+                <Link
+                activeClass="active"
+                to="section4-content"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration= {500}
+                >
+                <Nav.Link href="#pricing">SKILLS</Nav.Link>
+                </Link>
+                <Link
+                activeClass="active"
+                to="section5-content"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration= {500}
+                >
+                <Nav.Link href="#pricing">INTERESTS</Nav.Link>
                 </Link>
               </Nav>
             </Navbar.Collapse>
