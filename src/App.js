@@ -23,12 +23,14 @@ function App() {
         dark={false}
         socialIcons={true}
         id="section1-content"
+        about={true}
       />
       <Section
         title="EXPERIENCE"
         subtitle={dummyText}
         dark={true}
         id="section2-content"
+        experience={true}
       />
       <Section
         title="EDUCATION"

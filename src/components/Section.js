@@ -7,7 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faMedium } from "@fortawesome/free-brands-svg-icons"
 import { Link } from 'react-router-dom';
 
-export default function Section({ title, lastName, city, email, paragraph, dark, id, socialIcons }) {
+export default function Section({ title, lastName, city, email, paragraph,
+                                  dark, id, socialIcons, about, experience }) {
 
   // const animatedStyles = useSpring({opacity: 0})
 
@@ -16,7 +17,7 @@ export default function Section({ title, lastName, city, email, paragraph, dark,
     <Spring from={{opacity: 0, marginTop: -1000}} to={{opacity: 1, marginTop: 0}} >
       { props => (
       <div className={"section" + (dark ? " section-dark" : "")} style={props}>
-        <div className={id} id={id}>
+        <div className={about ? id : "section-none"} id={id}>
           <Springcard/>
           <div className={"InfoDiv"}>
             <div className={"titleDiv"}>
@@ -39,7 +40,24 @@ export default function Section({ title, lastName, city, email, paragraph, dark,
             </div>
           </div>
         </div>
+        
+        
+        <div className={experience ? id : "section-none"} id={id}>
+          <div>
+            <h2>{title}</h2>
+            <img src={require('../assets/walterwhite.png')} style={{width: "19ch"}}/>
+          </div>
+          <div className={"InfoDiv"}>
+            <h3>Backend Developer</h3>
+            <div className={"subHeader"}>Amdocs</div>
+            <h3>Junior Developer</h3>
+            <div className={"subHeader"}>MoovingON</div>
+            <h3>NOC Engineer</h3>
+            <div className={"subHeader"}>MoovingON</div>
+          </div>
+        </div>
       </div>
+ 
       )}
     </Spring>
   );
