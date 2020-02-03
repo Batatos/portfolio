@@ -109,16 +109,44 @@
   margin: 0 auto;
   padding: 10%;
   display: inline-flex;
-  color: white !important;
+  color: #cbd0d4 !important;
 }
 .section2-content h2{
-  color: white;
+  color: #cbd0d4;
   font-family: fantasy;
   display: flex;
 }
 .section2-content h3{
-  color: white;
+  color: #cbd0d4;
   font-family: fantasy;
+}
+.section2-content p{
+  margin-bottom: 0;
+  color: #cbd0d4 !important;
+  /* font-family: fantasy; */
+}
+.company{
+  display: inline-flex;
+}
+.company h7{
+  margin-right: 0px;
+  margin-left: auto;
+  color: white !important;
+  font-family: fantasy;
+  font-weight: 100 !important;
+}
+.profession{
+  display: inline-flex;
+}
+.profession h7{
+  margin-right: 0px;
+  margin-left: auto;
+  color: white !important;
+  font-family: fantasy;
+  font-weight: 100 !important;
+}
+.careerStation{
+  display: grid;
 }
 .subHeader{
   color: white !important;

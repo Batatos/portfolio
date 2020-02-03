@@ -6,6 +6,7 @@ import Section from './components/Section';
 import Navbar from './components/Navbar';
 import dummyText from './DummyText';
 import PersonalPara from './PersonalPara';
+import AmdocsDesc from './AmdocsDesc';
 
 
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
@@ -31,6 +32,7 @@ function App() {
         dark={true}
         id="section2-content"
         experience={true}
+        amdocsDesc={AmdocsDesc}
       />
       <Section
         title="EDUCATION"
