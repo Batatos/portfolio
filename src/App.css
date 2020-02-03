@@ -109,20 +109,20 @@
   margin: 0 auto;
   padding: 10%;
   display: inline-flex;
-  color: #cbd0d4 !important;
+  color: #f0f0f0 !important;
 }
 .section2-content h2{
-  color: #cbd0d4;
+  color: #f0f0f0;
   font-family: fantasy;
   display: flex;
 }
 .section2-content h3{
-  color: #cbd0d4;
+  color: #f0f0f0;
   font-family: fantasy;
 }
 .section2-content p{
   margin-bottom: 0;
-  color: #cbd0d4 !important;
+  color: #f0f0f0 !important;
   /* font-family: fantasy; */
 }
 .company{
@@ -131,7 +131,7 @@
 .company h7{
   margin-right: 0px;
   margin-left: auto;
-  color: white !important;
+  color: #f0f0f0 !important;
   font-family: fantasy;
   font-weight: 100 !important;
 }
@@ -141,7 +141,7 @@
 .profession h7{
   margin-right: 0px;
   margin-left: auto;
-  color: white !important;
+  color: #f0f0f0 !important;
   font-family: fantasy;
   font-weight: 100 !important;
 }
@@ -149,16 +149,30 @@
   display: grid;
 }
 .subHeader{
-  color: white !important;
+  color: #f0f0f0 !important;
   font-family: fantasy;
 }
 .section3-content {
-  max-width: 80%;
+  width: 100%;
   margin: 0 auto;
-  padding: 40px;
+  padding: 10%;
+  display: inline-flex;
+  font-family: fantasy;
+}
+.section3-content h2{
+  color: #2e2e2e;
+}
+.educationStation{
+  color: #2e2e2e;
+}
+.university{
+  width: 100%;
   display: inline-flex;
 }
-
+.university h7{
+  margin-right: 0px;
+  margin-left: auto;
+}
 .InfoDiv{
   padding-left: 5%;
 }

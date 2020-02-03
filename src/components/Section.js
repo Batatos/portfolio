@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 export default function Section({ title, lastName, city, email, paragraph,
                                   dark, id, socialIcons, about, experience,
-                                  amdocsDesc }) {
+                                  education }) {
 
   // const animatedStyles = useSpring({opacity: 0})
 
@@ -18,6 +18,8 @@ export default function Section({ title, lastName, city, email, paragraph,
     <Spring from={{opacity: 0, marginTop: -1000}} to={{opacity: 1, marginTop: 0}} >
       { props => (
       <div className={"section" + (dark ? " section-dark" : "")} style={props}>
+        
+        
         <div className={about ? id : "section-none"} id={id}>
           <Springcard/>
           <div className={"InfoDiv"}>
@@ -85,15 +87,45 @@ export default function Section({ title, lastName, city, email, paragraph,
             <div className={"careerStation"}>
               <div className={"profession"}>
                 <h3>NOC Engineer</h3>
-                <h7>Spring 2016</h7>
+                <h7>Nesher, Israel</h7>
               </div>
               <div className={"company"}>
                 <div className={"subHeader"}>MoovingON</div>
-                <h7>Nesher, Israel</h7>
+                <h7>Spring 2016</h7>
               </div>
             </div>
           </div>
         </div>
+
+
+        <div className={education ? id : "section-none"} id={id}>
+          <div>
+            <h2>{title}</h2>
+            <img src={require('../assets/school.png')} style={{width: "19ch"}}/>
+          </div>
+          <div className={"InfoDiv"}>
+            <div className={"educationStation"}>
+              <div className={"university"}>
+                <h3>University of Haifa</h3>
+                <h7>2014-2018</h7>
+              </div>
+              <div className={"degree"}>
+                <a target="_blank" href="https://is-web.hevra.haifa.ac.il/index.php/en/">BSC in Information Systems</a>
+              </div>
+            </div>
+            <br/>
+            <div className={"educationStation"}>
+              <div className={"certificate"}>
+                <h3>Excellence</h3>
+                <h7>Elected as best <a target="_blank" href="https://drive.google.com/file/d/1x4h6bgS_VjXNOsbIIn4yBcFFXszgk9Y-/view">final project 2018</a> , Android app that assists restaurant crew.</h7>
+              </div>
+            </div>
+            <br/>
+          </div>
+        </div>
+      
+        
+      
       </div>
  
       )}
