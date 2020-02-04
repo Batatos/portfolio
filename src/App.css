@@ -263,9 +263,16 @@
   margin-bottom: auto;
 }
 .navbar-nav{
-  flex-direction: column;
+  flex-direction: column !important;
   width: 100%;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none !important;
+  color: #868e96;
+}
+.navbar-item{
+  font-weight: 600;
+}
+.navbar-item:hover{
+  color: #adb2b8;
 }
