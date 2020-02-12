@@ -44,14 +44,16 @@ function App() {
         <Section
           title="SKILLS"
           subtitle={dummyText}
-          dark={true}
+          dark={false}
           id="section4-content"
+          skills={true}
         />
         <Section
           title="INTERESTS"
           subtitle={dummyText}
           dark={false}
           id="section5-content"
+          interests={true}
         />
         <Footer/>
       </div>

@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link, animateScroll as scroll} from 'react-scroll';
 
 
 class Sidenav extends Component{
@@ -12,8 +13,18 @@ class Sidenav extends Component{
             </a>
             <div className={"navbar-content"}>
                 <ul className={"navbar-nav"}>
+                    
                     <li className={"navbar-item"}>ABOUT</li>
-                    <li className={"navbar-item"}>EXPERIENCE</li>
+                    <Link
+                    activeClass="active"
+                    to="section2-content"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration= {500}
+                    >
+                        <li className={"navbar-item"}>EXPERIENCE</li>
+                    </Link>
                     <li className={"navbar-item"}>EDUCATION</li>
                     <li className={"navbar-item"}>SKILLS</li>
                     <li className={"navbar-item"}>INTERESTS</li>

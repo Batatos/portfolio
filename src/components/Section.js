@@ -4,12 +4,14 @@ import Springcard from "./Springcard";
 import { Spring } from "react-spring";
 import { animated, useSpring } from "react-spring";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin, faMedium } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faLinkedin, faMedium, faReact, faJava, faPhp, 
+          faAngular, faAndroid, faAws,faPython, faDocker, faLinux,
+          faGit } from "@fortawesome/free-brands-svg-icons";
 import { Link } from 'react-router-dom';
 
 export default function Section({ title, lastName, city, email, paragraph,
                                   dark, id, socialIcons, about, experience,
-                                  education }) {
+                                  education, skills, interests }) {
 
   // const animatedStyles = useSpring({opacity: 0})
 
@@ -119,6 +121,72 @@ export default function Section({ title, lastName, city, email, paragraph,
                 <h3>Excellence</h3>
                 <h7>Elected as best <a target="_blank" href="https://drive.google.com/file/d/1x4h6bgS_VjXNOsbIIn4yBcFFXszgk9Y-/view">final project 2018</a> , Android app that assists restaurant crew.</h7>
               </div>
+            </div>
+            <br/>
+          </div>
+        </div>
+
+        <div className={skills ? id : "section-none"} id={id}>
+          <div>
+            <h2>{title}</h2>
+            <img src={require('../assets/skills.png')} style={{width: "19ch"}}/>
+          </div>
+          <div className={"InfoDiv"}>
+            <div className={"educationStation"}>
+              <div className={"university"}>
+                <h3></h3>
+              </div>
+              <div className={"degree"}>
+              Programming languages and tools
+              </div>
+              <div className={"socialIcons"}>
+                <FontAwesomeIcon className={"socialIcon"} icon={faReact} size='3x'/>
+                <FontAwesomeIcon className={"socialIcon"} icon={faAngular} size='3x'/>
+                <FontAwesomeIcon className={"socialIcon"} icon={faAndroid} size='3x'/>
+                <FontAwesomeIcon className={"socialIcon"} icon={faJava} size='3x'/>
+                <FontAwesomeIcon className={"socialIcon"} icon={faPython} size='3x'/>
+                <FontAwesomeIcon className={"socialIcon"} icon={faPhp} size='3x'/>
+                <FontAwesomeIcon className={"socialIcon"} icon={faAws} size='3x'/>
+                <FontAwesomeIcon className={"socialIcon"} icon={faDocker} size='3x'/>
+                <FontAwesomeIcon className={"socialIcon"} icon={faLinux} size='3x'/>
+                <FontAwesomeIcon className={"socialIcon"} icon={faGit} size='3x'/>
+            </div>
+            </div>
+            <br/>
+            <div className={"educationStation"}>
+              <div className={"certificate"}>
+                <h3>Skills</h3>
+                <h7>* Web development</h7>
+                <h8>* Backend development with Java/Python/Php languages</h8>
+                <h8>* Frontend development with React/AngularJS and standart JS HTML.</h8>
+                <h7>* Devops mindset</h7>
+                <h8>* Well aware of standards and best practices in DevOps world.</h8>
+                <h7>* Startup and Corporate values</h7>
+                <h8>* Took leading part in both startup and corporation.</h8>
+              </div>
+            </div>
+            <br/>
+          </div>
+        </div>
+
+
+        <div className={interests ? id : "section-none"} id={id}>
+          <div>
+            <h2>{title}</h2>
+            <img src={require('../assets/interest.png')} style={{width: "19ch"}}/>
+          </div>
+          <div className={"InfoDiv"}>
+            <div className={"educationStation"}>
+              <div className={"university"}>
+                <h3></h3>
+              </div>
+              <div className={"degree"}>
+              Some interest shit
+              </div>
+            </div>
+            <br/>
+            <div className={"educationStation"}>
+              
             </div>
             <br/>
           </div>
