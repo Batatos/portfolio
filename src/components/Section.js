@@ -156,13 +156,13 @@ export default function Section({ title, lastName, city, email, paragraph,
             <div className={"educationStation"}>
               <div className={"certificate"}>
                 <h3>Skills</h3>
-                <h7>* Web development</h7>
-                <h8>* Backend development with Java/Python/Php languages</h8>
-                <h8>* Frontend development with React/AngularJS and standart JS HTML.</h8>
-                <h7>* Devops mindset</h7>
-                <h8>* Well aware of standards and best practices in DevOps world.</h8>
-                <h7>* Startup and Corporate values</h7>
-                <h8>* Took leading part in both startup and corporation.</h8>
+                  <div>● Web development</div>
+                  <p>- Backend development with Java/Python/Php languages</p>
+                  <p>- Frontend development with React/AngularJS and standart JS HTML</p>
+                  <div>● Devops mindset</div>
+                  <p>- Well aware of standards and best practices in DevOps world</p>
+                <div>● Both startup and corporate values</div>
+                <p>- Took leading part in both startup and corporation.</p>
               </div>
             </div>
             <br/>

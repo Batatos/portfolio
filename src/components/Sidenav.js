@@ -25,9 +25,36 @@ class Sidenav extends Component{
                     >
                         <li className={"navbar-item"}>EXPERIENCE</li>
                     </Link>
-                    <li className={"navbar-item"}>EDUCATION</li>
-                    <li className={"navbar-item"}>SKILLS</li>
+                    <Link
+                    activeClass="active"
+                    to="section3-content"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration= {500}
+                    >
+                        <li className={"navbar-item"}>EDUCATION</li>
+                    </Link>
+                    <Link
+                    activeClass="active"
+                    to="section4-content"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration= {500}
+                    >
+                        <li className={"navbar-item"}>SKILLS</li>
+                    </Link>
+                    <Link
+                    activeClass="active"
+                    to="section5-content"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration= {500}
+                    >
                     <li className={"navbar-item"}>INTERESTS</li>
+                    </Link>
                 </ul>
             </div>
         </nav>
