@@ -30,7 +30,7 @@ function App() {
         <Section
           title="EXPERIENCE"
           subtitle={dummyText}
-          dark={true}
+          dark={false}
           id="section2-content"
           experience={true}
         />
@@ -55,7 +55,7 @@ function App() {
           id="section5-content"
           interests={true}
         />
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </div>
   );

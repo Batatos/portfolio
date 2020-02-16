@@ -14,7 +14,7 @@ class Sidenav extends Component{
             <div className={"navbar-content"}>
                 <ul className={"navbar-nav"}>
                     
-                    <li className={"navbar-item"}>ABOUT</li>
+                    <li className={"navbar-item"}><a className={"nav-but"}>ABOUT</a></li>
                     <Link
                     activeClass="active"
                     to="section2-content"
@@ -23,7 +23,7 @@ class Sidenav extends Component{
                     offset={-50}
                     duration= {500}
                     >
-                        <li className={"navbar-item"}>EXPERIENCE</li>
+                        <li className={"navbar-item"}><a className={"nav-but"}>EXPERIENCE</a></li>
                     </Link>
                     <Link
                     activeClass="active"
@@ -33,7 +33,7 @@ class Sidenav extends Component{
                     offset={-50}
                     duration= {500}
                     >
-                        <li className={"navbar-item"}>EDUCATION</li>
+                        <li className={"navbar-item"}><a className={"nav-but"}>EDUCATION</a></li>
                     </Link>
                     <Link
                     activeClass="active"
@@ -43,7 +43,7 @@ class Sidenav extends Component{
                     offset={-50}
                     duration= {500}
                     >
-                        <li className={"navbar-item"}>SKILLS</li>
+                        <li className={"navbar-item"}><a className={"nav-but"}>SKILLS</a></li>
                     </Link>
                     <Link
                     activeClass="active"
@@ -53,7 +53,7 @@ class Sidenav extends Component{
                     offset={-50}
                     duration= {500}
                     >
-                    <li className={"navbar-item"}>INTERESTS</li>
+                    <li className={"navbar-item"}><a className={"nav-but"}>INTERESTS</a></li>
                     </Link>
                 </ul>
             </div>

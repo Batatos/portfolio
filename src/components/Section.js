@@ -44,8 +44,10 @@ export default function Section({ title, lastName, city, email, paragraph,
               </a>
             </div>
           </div>
+          <br/>
+          <hr/>
         </div>
-        
+        <hr/>
         
         <div className={experience ? id : "section-none"} id={id}>
           <div>
@@ -97,6 +99,8 @@ export default function Section({ title, lastName, city, email, paragraph,
               </div>
             </div>
           </div>
+          <br/>
+          <hr/>
         </div>
 
 
@@ -112,18 +116,20 @@ export default function Section({ title, lastName, city, email, paragraph,
                 <h7>2014-2018</h7>
               </div>
               <div className={"degree"}>
-                <a target="_blank" href="https://is-web.hevra.haifa.ac.il/index.php/en/">BSC in Information Systems</a>
+                <a target="_blank" href="https://is-web.hevra.haifa.ac.il/index.php/en/" style={{color: "#5d6369"}}>BSC in Information Systems</a>
               </div>
             </div>
             <br/>
             <div className={"educationStation"}>
               <div className={"certificate"}>
                 <h3>Excellence</h3>
-                <h7>Elected as best <a target="_blank" href="https://drive.google.com/file/d/1x4h6bgS_VjXNOsbIIn4yBcFFXszgk9Y-/view">final project 2018</a> , Android app that assists restaurant crew.</h7>
+                <h7>Elected as best <a target="_blank" href="https://drive.google.com/file/d/1x4h6bgS_VjXNOsbIIn4yBcFFXszgk9Y-/view" style={{color: "#5d6369"}}>final project 2018</a> , Android app that assists restaurant crew.</h7>
               </div>
             </div>
             <br/>
           </div>
+          <br/>
+          <hr/>
         </div>
 
         <div className={skills ? id : "section-none"} id={id}>
@@ -133,9 +139,6 @@ export default function Section({ title, lastName, city, email, paragraph,
           </div>
           <div className={"InfoDiv"}>
             <div className={"educationStation"}>
-              <div className={"university"}>
-                <h3></h3>
-              </div>
               <div className={"degree"}>
               Programming languages and tools
               </div>
@@ -167,6 +170,8 @@ export default function Section({ title, lastName, city, email, paragraph,
             </div>
             <br/>
           </div>
+          <br/>
+          <hr/>
         </div>
 
 
@@ -190,6 +195,8 @@ export default function Section({ title, lastName, city, email, paragraph,
             </div>
             <br/>
           </div>
+          <br/>
+          <hr/>
         </div>
       
         
